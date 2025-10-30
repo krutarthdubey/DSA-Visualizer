@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DSA Visualizer</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🧮 DSA Visualizer</h2>
+    <p>Visualize Bubble Sort in action</p>
+
+    <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas">
+    <button onclick="visualize()">Visualize</button>
+
+    <div class="speed-control">
+      <label for="speedRange">Animation Speed:</label>
+      <input type="range" id="speedRange" min="50" max="1000" value="250">
+      <span id="speedValue">250 ms</span>
+    </div>
+
+    <div id="barsContainer"></div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
